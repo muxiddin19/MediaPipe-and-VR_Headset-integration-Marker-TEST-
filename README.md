@@ -97,13 +97,6 @@ def detect_stickers(image):
     coords = model.predict(np.expand_dims(img, axis=0))[0]
     return [(int(coords[i]), int(coords[i+1])) for i in range(0, 10, 2)]
 ```
-### Step 5: HCI Lab Contribution
-- Present this solution to the HCI lab, emphasizing:
--  ** Sticker-based precision boost (per Dr. M.’s advice).
-
-- ** Deep learning potential (your AI skills).
-
-- Test in their VR setup and refine based on feedback.
 
 ### Next Steps
 - Share your VR headset model for SDK-specific code.
